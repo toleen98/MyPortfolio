@@ -1,13 +1,75 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    font-size: 30px;
+    padding:2.5%;
+    font-family: 'Roboto Condense', sans-serif;
+    background-color: hsl(210, 36%, 96%);
+    color: hsl(205, 86%, 17%);
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,h2,h3,h4,h5 {
+    font-family: 'Economica', sans-serif;
+    font-weight: 800;
 }
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    
+}
+
+.title-fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+
+.title-fade-in {
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-out {
+    from {opacity: 100;}
+    to{opacity: 0;}
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to{opacity: 100;}
+}
+
+.card {
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding-top: 10px;
+  
+}
+
+button {
+    margin-top: 0.5rem;
+    background: hsl(205, 100%, 96%);
+    color: hsl(205, 78%, 60%);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;;
+    transition: all 0.3s linear;;
+    border-color: hsl(205, 78%, 60%);
+    cursor: pointer;
+}
+
+button:hover {
+    background:  hsl(205, 78%, 60%);
+    color: hsl(205, 86%, 17%);
+}
+
+
+
+
+
+
